@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Text Processor",
+  "version": "1.0",
+  "description": "Process selected text with Gemini.",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "tabs",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*",
+    "file://*",
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["pdf-content.js"],
+      "all_frames": true,
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
