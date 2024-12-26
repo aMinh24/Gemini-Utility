@@ -1,33 +1,20 @@
-# Hướng dẫn cài đặt và sử dụng Gemini Screenshot
+# Hướng dẫn sử dụng Gemini Screenshot
 
-## Cài đặt môi trường Python và các thư viện cần thiết
+## Cài đặt
 
-Để sử dụng chương trình Gemini Screenshot, bạn cần cài đặt Python và các thư viện sau:
+1. **Tải thư mục ExeFile:**
+    * Tải thư mục `ExeFile` về máy tính của bạn.
 
-1.  **Cài đặt Python:**
-    *   Tải Python từ trang web chính thức: [https://www.python.org/downloads/](https://www.python.org/downloads/)
-    *   Chọn phiên bản Python 3.7 trở lên và cài đặt.
-    *   Trong quá trình cài đặt, hãy chắc chắn chọn "Add Python to PATH" để có thể chạy Python từ command line.
+2. **Tạo shortcut cho file `GeminiScreenshot.exe`:**
+    * Tìm file `GeminiScreenshot.exe` trong thư mục `ExeFile`.
+    * Click chuột phải vào file, chọn "Create shortcut".
+    * Kéo shortcut vừa tạo ra desktop.
 
-2.  **Cài đặt các thư viện cần thiết:**
-    *   Mở command line (cmd) hoặc PowerShell.
-    *   Chạy lệnh sau để cài đặt các thư viện:
-        ```
-        pip install Pillow requests cryptography python-dotenv
-        ```
-
-## Tạo shortcut cho file `Gemini_Screen.vbs` và gán phím tắt
-
-1.  **Tạo shortcut:**
-    *   Tìm file `Gemini_Screen.vbs` trong thư mục.
-    *   Click chuột phải vào file, chọn "Create shortcut".
-    *   Kéo shortcut vừa tạo ra desktop.
-
-2.  **Gán phím tắt:**
-    *   Click chuột phải vào shortcut trên desktop, chọn "Properties".
-    *   Chọn tab "Shortcut".
-    *   Click vào ô "Shortcut key" và nhấn tổ hợp phím bạn muốn gán (ví dụ: Ctrl + Shift + G).
-    *   Nhấn "OK" để lưu lại.
+3. **Gán phím tắt:**
+    * Click chuột phải vào shortcut trên desktop, chọn "Properties".
+    * Chọn tab "Shortcut".
+    * Click vào ô "Shortcut key" và nhấn tổ hợp phím bạn muốn gán (ví dụ: Ctrl + Shift + G).
+    * Nhấn "OK" để lưu lại.
 
 ## Hướng dẫn sử dụng
 
