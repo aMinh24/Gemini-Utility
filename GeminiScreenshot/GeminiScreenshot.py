@@ -351,8 +351,12 @@ if __name__ == '__main__':
     root.withdraw()
     cleanup_temp_files()
     try:
-        load_dotenv(find_dotenv())
-        api_key = get_key(".env", "GEMINI_API_KEY")
+        api_key = get_api_key()
+        if api_key:
+            try:
+                api_key = base64.b64decode(api_key).decode('utf-8')
+            except:
+                pass
         url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={api_key}"
         
         image_path_container = [None]
@@ -406,9 +410,6 @@ if __name__ == '__main__':
         settings_button.pack(pady=10)
 
         root.mainloop()
-    except FileNotFoundError:
-        messagebox.showerror("Lỗi", "File .env không tồn tại. Vui lòng chạy lại chương trình.")
-        os._exit(1)
     except Exception as e:
         messagebox.showerror("Lỗi", f"Có lỗi xảy ra: {e}")
         os._exit(1)
