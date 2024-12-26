@@ -106,6 +106,7 @@ async function injectAndShowResult(result, tab) {
                     font-size: 14px;
                     max-height: 200px;
                     overflow-y: auto;
+                    color: black;
                 }
                 #geminiResult .close-button {
                     position: absolute;
